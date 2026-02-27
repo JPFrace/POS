@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer components {
+    .space-x-standard,.space-x-st {
+        @apply flex gap-x-4;
+    }
+    .space-x-st-xs {
+        @apply flex gap-x-2;
+    }
+    .space-x-st-md {
+        @apply flex gap-x-6;
+    }
+
+    .space-y-standard,.space-y-st {
+        @apply flex flex-col gap-y-4;
+    }
+    .space-y-st-xs {
+        @apply flex flex-col gap-y-2;
+    }
+    .space-y-st-md {
+        @apply flex flex-col gap-y-6;
+    }
+
+    .gap-x-standard,.gap-x-st {
+        @apply flex gap-x-4;
+    }
+    .gap-x-st-xs {
+        @apply flex gap-x-2;
+    }
+    .gap-x-st-md {
+        @apply flex gap-x-6;
+    }
+
+    .gap-y-standard,.gap-y-st {
+        @apply flex flex-col gap-y-4;
+    }
+   .gap-y-st-xs {
+        @apply flex flex-col gap-y-2;
+    }
+    .gap-y-st-md {
+        @apply flex flex-col gap-y-6;
+    }
+
+    .gap-standard,.gap-st {
+        @apply flex flex-col gap-4;
+    }
+    .gap-st-xs {
+        @apply flex gap-2;
+    }
+    .gap-st-md {
+        @apply flex gap-6;
+    }
+    
+    .p-standard,.p-st {
+        @apply p-4;
+    }
+    .p-st-xs {
+        @apply p-2;
+    }
+    .p-st-md {
+        @apply p-6;
+    }
+
+    .px-standard,.px-st {
+        @apply px-4;
+    }
+    .px-st-xs {
+        @apply px-2;
+    }
+    .px-st-md {
+        @apply px-6;
+    }
+
+    .py-standard,.py-st {
+        @apply py-4;
+    }
+    .py-st-xs {
+        @apply py-2;
+    }
+    .py-st-md {
+        @apply py-6;
+    }
+
+    .icon-action {
+        @apply cursor-pointer hover:dark:text-white hover:text-slate-900;
+    }
+}

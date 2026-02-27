@@ -1,0 +1,33 @@
+@import "./components.css";
+
+#app {
+    display: contents;
+}
+
+/* Modal container background for light and dark modes */
+html.light .modal-container {
+    background: #fff !important;
+}
+html.dark .modal-container,
+body.dark .modal-container {
+    background: #17181d !important;
+}
+
+/* =========================================
+   Override Metronic input border radius
+========================================= */
+
+.fv-row input[type="text"],
+.fv-row input[type="email"],
+.fv-row input[type="password"] {
+  border-radius: 9999px;
+}
+
+
+
+
+
+
+
+
+

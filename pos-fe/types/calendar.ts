@@ -1,0 +1,33 @@
+export interface calendar {
+    uuid: string;
+    year: string;
+    no_of_periods: number;
+    start_date: Date | null;
+    end_date: Date | null;
+    period_1: Date | null;
+    period_1_closed: boolean;
+    period_2: Date | null;
+    period_2_closed: boolean;
+    period_3: Date | null;
+    period_3_closed: boolean;
+    period_4: Date | null;
+    period_4_closed: boolean;
+    period_5: Date | null;
+    period_5_closed: boolean;
+    period_6: Date | null;
+    period_6_closed: boolean;
+    period_7: Date | null;
+    period_7_closed: boolean;
+    period_8: Date | null;
+    period_8_closed: boolean;
+    period_9: Date | null;
+    period_9_closed: boolean;
+    period_10: Date | null;
+    period_10_closed: boolean;
+    period_11: Date | null;
+    period_11_closed: boolean;
+    period_12: Date | null;
+    period_12_closed: boolean;
+    created_at: string;
+    is_inactive?: boolean;
+}
