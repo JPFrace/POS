@@ -1,5 +1,3 @@
-import type { Bookmark } from "./bookmark";
-import type { ChartAccount } from "./chart-account";
 import type { User } from "./user";
 
 export interface Reports {
@@ -10,12 +8,5 @@ export interface Reports {
     created_by?: User | null;
     is_inactive?: boolean;
     template: string;
-    bookmark?: Bookmark | null;
 }
 
-export interface StatementIncomeExpenseRow extends ChartAccount {
-    beginning_balance: number;
-    current_month: number;
-    year_to_date: number;
-    budget_to_date: number;
-}
