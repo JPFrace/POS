@@ -13,7 +13,7 @@ class UserUpdateRequest extends FormRequest
     public function authorize(): bool
     {
         return true;
-        return $this->user()->can("Users", ['edit']);
+        // return $this->user()->can("Users", ['edit']);
     }
 
     /**
@@ -54,7 +54,7 @@ class UserUpdateRequest extends FormRequest
 
         $this->replace([
             ...$this->all(),
-            'roles' => array_map(fn($role) => $role['uuid'], $roles)
+            'roles' => array_map(fn($role) => $role['value'], $roles)
         ]);
     }
 

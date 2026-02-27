@@ -25,7 +25,7 @@ class RolesController extends Controller
      */
     public function index(Request $request)
     {
-       $request->user()->throwCannot("Security.Roles", "List");
+    //    $request->user()->throwCannot("Security.Roles", "List");
 
         return $this->query($this->repository, RoleResource::class, $request);
     }
@@ -46,7 +46,7 @@ class RolesController extends Controller
      */
     public function store(RoleRequest $request)
     {
-        $request->user()->throwCannot("Security.Roles", "Create");
+        // $request->user()->throwCannot("Security.Roles", "Create");
         
         return $this->catch(fn() => $this->repository->create($request->only([
             'slug',
@@ -70,7 +70,7 @@ class RolesController extends Controller
      */
     public function update(RoleRequest $request, Role $role)
     {
-        $request->user()->throwCannot("Security.Roles", "Edit");
+        // $request->user()->throwCannot("Security.Roles", "Edit");
 
         return $this->catch(fn() => $this->repository->update($request->only([
             'slug',

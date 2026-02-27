@@ -12,9 +12,7 @@ use App\Http\Resources\Security\UserResource;
 use App\Repositories\UserRepository;
 use Illuminate\Http\Request;
 use App\Models\User;
-use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rule;
 
 class UsersController extends Controller
 {
@@ -52,9 +50,7 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        return User::with(User::$relations ?? ['roles', 'department']) // eager load all relationships
-            ->where('id', $user->id)
-            ->firstOrFail();
+        return $user->load(['roles', 'file']);
     }
 
     /**
