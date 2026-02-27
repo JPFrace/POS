@@ -17,19 +17,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RolesSeeder::class,
             UsersSeeder::class,
-            PaymentTypesSeeder::class,
-            AccountCategoriesSeeder::class,
-            ContactSubTypesSeeder::class,
-            AccountUsageTypesSeeder::class,
             ReportsSeeder::class,
-            TransactionTypesSeeder::class,
             PoliciesSeeder::class,
-            ContactClassesSeeder::class,
             ConfigurationSeeder::class,
-            CountrySeeder::class,
-            PaymentStatusSeeder::class,
-            TaxonomySeeder::class,
-            CreateFinancialCodesSeeder::class,
         ]);
     }
 }

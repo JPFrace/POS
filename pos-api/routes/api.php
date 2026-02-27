@@ -15,15 +15,7 @@ Route::get('/generate-token', [AccessTokenController::class, 'generateToken'])->
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
     require_once __DIR__ . "/security.php";
-    require_once __DIR__ . "/setup.php";
-    require_once __DIR__ . "/accounting.php";
-    require_once __DIR__ . "/contacts.php";
-    require_once __DIR__ . "/business.php";
-    require_once __DIR__ . "/products.php";
     require_once __DIR__ . "/reports.php";
-    require_once __DIR__ . "/budgets.php";
-    require_once __DIR__ . "/externals.php";
-    require_once __DIR__ . "/taxes.php";
 
 });
 

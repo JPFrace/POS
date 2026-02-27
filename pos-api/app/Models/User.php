@@ -103,27 +103,12 @@ class User extends Authenticatable
     public function file(): BelongsTo
     {
         return $this->belongsTo(File::class, 'image_id');
-    }
-
-    public function paymentTypes(): HasMany
-    {
-        return $this->hasMany(PaymentType::class, 'created_by');
-    }
-
-    public function contacts(): HasMany
-    {
-        return $this->hasMany(Contact::class, 'created_by');
-    }
+    }    
 
     public function audits(): HasMany
     {
         return $this->hasMany(Audit::class, 'user_id');
-    }
-
-    public function department()
-    {
-        return $this->belongsTo(Department::class, 'department');
-    }
+    }    
 
     public function rolesAssigned(): Attribute
     {

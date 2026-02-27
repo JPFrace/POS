@@ -50,9 +50,4 @@ class ReportSignatory extends Model
     {
         return $this->belongsTo(User::class, 'created_by');
     }
-    public function signatory(): BelongsTo
-    {
-        return $this->belongsTo(Signatories::class, 'signatory_id');
-    }
-
 }

@@ -42,10 +42,6 @@ class File extends Model
     protected $casts = [
         'created_at' => 'datetime: m/d/Y H:i:s',
     ];
-    public function posts()
-    {
-        return $this->belongsToMany(Post::class, PostFile::class);
-    }
 
     public function url(): Attribute
     {
