@@ -1,8 +1,64 @@
 //
-// Dark Header(used by Dark Header layout only)
+// Dark Header (used by Dark Header layout and Dark Sidebar layout)
 //
 
-[data-kt-app-layout="dark-header"] {
+// Header dropdown menus (Quick Actions, Config, Search, Notifications, User) – dark theme
+[data-kt-app-layout="dark-header"],
+[data-kt-app-layout="dark-sidebar"] {
+    .app-header-dropdown {
+        background-color: $app-header-dark-bg-color !important;
+        border: 1px solid $app-header-dark-separator-color;
+
+        .app-header-dropdown__heading {
+            color: $gray-600-dark !important;
+        }
+
+        .app-header-dropdown__link {
+            color: $gray-600-dark !important;
+
+            &:hover {
+                background-color: $app-header-dark-menu-active-link-bg-color !important;
+                color: var(--#{$prefix}primary-inverse) !important;
+            }
+        }
+
+        .app-header-dropdown__icon {
+            color: $gray-600-dark !important;
+        }
+
+        .menu-link,
+        .menu-title,
+        .text-gray-700,
+        .text-muted,
+        .text-gray-500 {
+            color: $gray-600-dark !important;
+        }
+
+        .menu-link:hover,
+        .menu-item:hover .menu-link {
+            color: var(--#{$prefix}primary-inverse) !important;
+            background-color: $app-header-dark-menu-active-link-bg-color !important;
+        }
+
+        .nav-link.text-white {
+            color: $gray-600-dark !important;
+        }
+
+        .bg-white {
+            background-color: transparent !important;
+        }
+
+        input,
+        .form-control {
+            background-color: $app-header-dark-menu-active-link-bg-color;
+            border-color: $app-header-dark-separator-color;
+            color: var(--#{$prefix}primary-inverse);
+        }
+    }
+}
+
+[data-kt-app-layout="dark-header"],
+[data-kt-app-layout="dark-sidebar"] {
     .app-header {
         background-color: $app-header-dark-bg-color;
         border-bottom: 0 !important;

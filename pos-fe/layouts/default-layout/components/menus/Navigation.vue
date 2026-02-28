@@ -13,10 +13,10 @@
       >
         <div id="kt_header_navigation_toggle" class="d-flex align-items-center">
           <div
-            class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px flex items-center justify-center rounded-lg transition-all duration-200 ease-out hover:bg-gray-100 hover:scale-100 active:scale-80"
+            class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px flex items-center justify-center rounded-lg transition-all duration-200 ease-out hover:scale-100 active:scale-80"
             title="Quick Actions"
           >
-            <KTIcon icon-name="plus-circle" icon-class="fs-2 text-gray-900" />
+            <KTIcon icon-name="plus-circle" icon-class="fs-2" />
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
     <template #content>
       <div
         id="kt-navigation-menu"
-        class="menu menu-sub menu-sub-dropdown menu-column p-7 h-md-200px w-md-450px rounded-xl shadow-xl bg-white"
+        class="menu menu-sub menu-sub-dropdown menu-column p-7 h-md-200px w-md-450px rounded-xl shadow-xl app-header-dropdown"
         data-kt-menu="true"
       >
         <div class="grid grid-cols-3 gap-y-6">
@@ -34,7 +34,7 @@
             <div class="min-w-[180px]">
               <!-- HEADING -->
               <h4
-                class="mb-3 font-semibold tracking-wide text-gray-700"
+                class="mb-3 font-semibold tracking-wide app-header-dropdown__heading"
               >
                 {{ item.heading }}
               </h4>
@@ -44,18 +44,18 @@
                 <li v-for="sub in item.pages" :key="sub.title">
                   <NuxtLink
                     :to="sub.route"
-                    class="group flex items-center gap-2 px-0.5 py-2 rounded-md text-sm text-black-700 hover:bg-gray-100 w-42 hover:text-black transition-all duration-200"
+                    class="group flex items-center gap-2 px-0.5 py-2 rounded-md text-sm app-header-dropdown__link transition-all duration-200"
                   >
                     <!-- Icon -->
                     <KTIcon
                       v-if="sub.keenthemesIcon"
                       :icon-name="sub.keenthemesIcon"
-                      class="text-black group-hover:text-black transition-transform duration-200"
+                      class="transition-transform duration-200 app-header-dropdown__icon"
                     />
 
                     <!-- Text -->
                     <span
-                      class="transition-transform duration-200 hover:border-b-[1px] border-blue-700"
+                      class="transition-transform duration-200 hover:border-b-[1px] border-primary"
                     >
                       {{ sub.title }}
                     </span>

@@ -30,7 +30,7 @@
             <!--begin::Menu-->
             <div
                 id="kt-search-menu"
-                class="menu menu-sub menu-sub-dropdown menu-column p-7 w-325px w-md-375px"
+                class="menu menu-sub menu-sub-dropdown menu-column p-7 w-325px w-md-375px app-header-dropdown"
                 data-kt-menu="true"
             >
                 <!--begin::Wrapper-->

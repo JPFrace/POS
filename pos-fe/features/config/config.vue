@@ -23,7 +23,7 @@
                     >
                         <KTIcon
                             icon-name="setting-2"
-                            icon-class="fs-2 text-gray-900"
+                            icon-class="fs-2"
                         />
                     </div>
                 </div>
@@ -33,7 +33,7 @@
         <template #content>
             <div
                 id="kt-config-menu"
-                class="menu menu-sub menu-sub-dropdown menu-column p-7 w-325px w-md-375px"
+                class="menu menu-sub menu-sub-dropdown menu-column p-7 w-325px w-md-375px app-header-dropdown"
                 data-kt-menu="true"
             >
                 <!-- <div class="flex items-center gap-2 mb-4">

@@ -1,7 +1,7 @@
 <template>
     <!--begin::Menu-->
     <div
-        class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px"
+        class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px app-header-dropdown"
         data-kt-menu="true"
     >
         <!--begin::Heading-->
